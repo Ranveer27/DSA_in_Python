@@ -1,0 +1,42 @@
+algorithm,complexity,n,time_seconds,time_milliseconds,normalized_microseconds,input_characteristics
+List indexing,O(1),1000,8.683999767526984e-08,8.683999767526983e-05,0.08683999767526984,Integer list; access the middle element repeatedly
+List indexing,O(1),5000,9.084000485017896e-08,9.084000485017897e-05,0.09084000485017896,Integer list; access the middle element repeatedly
+List indexing,O(1),10000,8.647000649943948e-08,8.647000649943947e-05,0.08647000649943948,Integer list; access the middle element repeatedly
+List indexing,O(1),50000,8.740000193938613e-08,8.740000193938613e-05,0.08740000193938613,Integer list; access the middle element repeatedly
+List indexing,O(1),100000,8.972000796347856e-08,8.972000796347857e-05,0.08972000796347857,Integer list; access the middle element repeatedly
+List indexing,O(1),200000,9.308999869972467e-08,9.308999869972467e-05,0.09308999869972467,Integer list; access the middle element repeatedly
+Binary search,O(log n),128,5.910000763833523e-07,0.0005910000763833523,0.0844285823404789,Sorted integer list; absent target above the largest value
+Binary search,O(log n),512,8.472000481560826e-07,0.0008472000481560826,0.09413333868400918,Sorted integer list; absent target above the largest value
+Binary search,O(log n),2048,1.0169000597670674e-06,0.0010169000597670674,0.09244545997882431,Sorted integer list; absent target above the largest value
+Binary search,O(log n),8192,1.0650000767782332e-06,0.001065000076778233,0.08192308282909486,Sorted integer list; absent target above the largest value
+Binary search,O(log n),32768,1.2024000752717257e-06,0.0012024000752717257,0.08016000501811504,Sorted integer list; absent target above the largest value
+Binary search,O(log n),131072,1.3356999261304737e-06,0.0013356999261304736,0.07857058389002787,Sorted integer list; absent target above the largest value
+Linear search,O(n),100,2.200016751885414e-06,0.002200016751885414,0.02200016751885414,Integer list; absent target forces a full scan
+Linear search,O(n),500,1.0599964298307896e-05,0.010599964298307896,0.02119992859661579,Integer list; absent target forces a full scan
+Linear search,O(n),1000,2.150004729628563e-05,0.02150004729628563,0.02150004729628563,Integer list; absent target forces a full scan
+Linear search,O(n),2000,4.369998350739479e-05,0.04369998350739479,0.021849991753697395,Integer list; absent target forces a full scan
+Linear search,O(n),4000,9.139999747276306e-05,0.09139999747276306,0.022849999368190765,Integer list; absent target forces a full scan
+Linear search,O(n),8000,0.00021349999587982893,0.21349999587982893,0.026687499484978616,Integer list; absent target forces a full scan
+Linear search,O(n),16000,0.00034689996391534805,0.34689996391534805,0.021681247744709253,Integer list; absent target forces a full scan
+Merge sort,O(n log n),128,0.00010629999451339245,0.10629999451339245,0.11863838673369692,Deterministically shuffled integer list; sorting does not modify input
+Merge sort,O(n log n),256,0.00023210002109408379,0.23210002109408379,0.1133300884248456,Deterministically shuffled integer list; sorting does not modify input
+Merge sort,O(n log n),512,0.0004995999624952674,0.4995999624952674,0.10842013074984101,Deterministically shuffled integer list; sorting does not modify input
+Merge sort,O(n log n),1024,0.0012266000267118216,1.2266000267118216,0.11978515885857631,Deterministically shuffled integer list; sorting does not modify input
+Merge sort,O(n log n),2048,0.00327590003143996,3.27590003143996,0.14541459656604935,Deterministically shuffled integer list; sorting does not modify input
+Merge sort,O(n log n),4096,0.0071131999138742685,7.1131999138742685,0.14471842272693416,Deterministically shuffled integer list; sorting does not modify input
+Merge sort,O(n log n),8192,0.01694649993441999,16.94649993441999,0.1591280417519906,Deterministically shuffled integer list; sorting does not modify input
+Pair counter,O(n^2),100,9.320001117885113e-05,0.09320001117885113,0.009320001117885113,Integer list; count all index pairs with i less than j
+Pair counter,O(n^2),200,0.0003562999190762639,0.3562999190762639,0.008907497976906598,Integer list; count all index pairs with i less than j
+Pair counter,O(n^2),400,0.0017849000869318843,1.7849000869318843,0.011155625543324277,Integer list; count all index pairs with i less than j
+Pair counter,O(n^2),800,0.008771899971179664,8.771899971179664,0.013706093704968225,Integer list; count all index pairs with i less than j
+Pair counter,O(n^2),1200,0.016271500033326447,16.271500033326447,0.011299652800921144,Integer list; count all index pairs with i less than j
+Pair counter,O(n^2),1600,0.029243300086818635,29.243300086818635,0.01142316409641353,Integer list; count all index pairs with i less than j
+Subset enumeration,O(2^n),4,6.00004568696022e-07,0.000600004568696022,0.03750028554350138,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),6,1.100008375942707e-06,0.001100008375942707,0.017187630874104798,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),8,3.5999109968543053e-06,0.0035999109968543053,0.01406215233146213,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),10,2.0400038920342922e-05,0.020400038920342922,0.019921913008147385,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),12,8.660007733851671e-05,0.08660007733851671,0.021142597006473807,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),14,0.0003519000019878149,0.3519000019878149,0.021478271605701593,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),16,0.0014152999501675367,1.4152999501675367,0.021595763399773205,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),18,0.005870299995876849,5.870299995876849,0.022393417342669864,Enumerate all bitmasks; n is restricted to at most 20
+Subset enumeration,O(2^n),20,0.02418099995702505,24.18099995702505,0.023060798604035426,Enumerate all bitmasks; n is restricted to at most 20
