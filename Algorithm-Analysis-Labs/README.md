@@ -95,24 +95,3 @@ The list-indexing measurements should remain approximately constant as `n` grows
 The normalized values divide each measured time by its corresponding theoretical growth function: `1`, `log2(n)`, `n`, `n log2(n)`, `n^2` or `2^n`. A roughly stable normalized value is consistent with the expected growth class, but measurements will not be perfectly constant. Fixed costs, lower-order terms, Python interpreter overhead, memory allocation, processor scheduling and cache effects all influence the results.
 
 For the prefix-average comparison, the first method repeats the addition of earlier elements for every prefix. The second method keeps the previous running sum and adds only the next value. Both produce the same mathematical averages, although floating-point arithmetic can introduce tiny representation differences; the validation therefore uses a tolerance rather than exact equality. The speedup column reports the measured ratio of the first method's time to the second method's time. The point at which the faster method becomes measurably faster depends on the machine and Python environment, so use your own timing output rather than assuming a fixed threshold.
-
-## Push the project to GitHub
-
-Create an empty repository on GitHub, then run these commands from the project folder in the VS Code terminal. Replace the URL with the URL of your own repository.
-
-```bash
-git init
-git add .
-git commit -m "Add algorithm analysis lab solutions"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/Algorithm-Analysis-Labs.git
-git push -u origin main
-```
-
-After running the experiments, you can add the generated CSV files and plots to the repository:
-
-```bash
-git add results/
-git commit -m "Add benchmark results and plots"
-git push
-```
